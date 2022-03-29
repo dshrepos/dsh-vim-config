@@ -163,23 +163,21 @@ let g:fzf_buffers_jump = 1
 nnoremap  [FuzzyFinder]   <Nop>
 nmap      ; [FuzzyFinder]
 
+nnoremap <silent> [FuzzyFinder]hh :Maps <CR>
 nnoremap <silent> [FuzzyFinder]f :Files<CR>
-nnoremap <silent> [FuzzyFinder]co :Files <CR> controllers
-nnoremap <silent> [FuzzyFinder]mo :Files <CR> models
-nnoremap <silent> [FuzzyFinder]g :Find<CR>
+nnoremap <silent> [FuzzyFinder]r :Rg<CR>
+nnoremap <silent> [FuzzyFinder]b :Buffers<CR>
 nnoremap <silent> [FuzzyFinder]t :Tags <CR>
 nnoremap <silent> [FuzzyFinder]T :BTags <CR>
+nnoremap <silent> [FuzzyFinder]c :Commands<CR>
 nnoremap <silent> [FuzzyFinder]gc :BCommits <CR>
 nnoremap <silent> [FuzzyFinder]gs :GFiles?<CR>
+nnoremap <silent> [FuzzyFinder]co :Files <CR> controllers
+nnoremap <silent> [FuzzyFinder]mo :Files <CR> models
+" nnoremap <silent> [FuzzyFinder]g :Find<CR>
 nnoremap <silent> [FuzzyFinder]/ :BLines <CR>
 nnoremap <silent> [FuzzyFinder]H :History <CR>
-nnoremap <silent> [FuzzyFinder]hh :Maps <CR>
 nnoremap <silent> [FuzzyFinder]h :History: <CR>
-nnoremap <silent> [FuzzyFinder]b :Buffers<CR>
-nnoremap <silent> [FuzzyFinder]c :Commands<CR>
-nnoremap <silent> [FuzzyFinder]r :Rg<CR>
-nnoremap <silent> [FuzzyFinder]me :CocList outline<cr>
-" nnoremap <silent> [FuzzyFinder]me :BLines <CR> def\<space>
 
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
